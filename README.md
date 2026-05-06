@@ -168,13 +168,15 @@ We provide training code to fine-tune VPR models on OpenHotels. This is done thr
 The aggregation strategy and all other training hyperparameters are controlled via the `model_config` dict in `salad/main.py` (or by supplying a JSON override with `--model_config_path`). To start training, run:
 
 ```bash
-python salad/main.py
+cd salad/
+python main.py
 ```
 
 Or with a custom config:
 
 ```bash
-python salad/main.py --model_config_path path/to/model_config.json
+cd salad/
+python main.py --model_config_path path/to/model_config.json
 ```
 
 Checkpoints are saved under `logs/` after each epoch.
