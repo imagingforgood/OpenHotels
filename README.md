@@ -78,46 +78,6 @@ After downloading the dataset, you must extract the tar shards into flat image d
 python scripts/extract_shards.py --data-dir data/full
 ```
 
-## Reproduction Scope
-
-This repository is intended to support the following reproduction paths as implementation code is added.
-
-### 1. Zero-Shot Results
-
-This repository should include code to reproduce all zero-shot results reported in the paper using the current sharded OpenHotels dataset layout.
-
-The zero-shot code should:
-
-- Load gallery and query metadata from the Hugging Face release.
-- Read images from tar shards using each row's `shard` and `path`.
-- Extract embeddings for gallery and query images.
-- Compute retrieval metrics for Test Non-Object and Test Object.
-- Write machine-readable outputs that can be used to reproduce the reported tables.
-
-### 2. Trained Model Weights
-
-Any trained model weights used for reported paper results should be made available with clear download instructions. If weights are too large for GitHub, they should be hosted through a release, Hugging Face model repository, or another stable artifact store.
-
-This repository should include:
-
-- A manifest listing each trained checkpoint.
-- The model architecture/backbone associated with each checkpoint.
-- The table/result rows each checkpoint reproduces.
-- Checksums where practical.
-
-### 3. Evaluation with Trained Weights
-
-This repository should include code to produce the relevant paper table entries from the released trained weights.
-
-The evaluation code should:
-
-- Load the checkpoint.
-- Load OpenHotels gallery and query metadata.
-- Read images from tar shards.
-- Extract or load features.
-- Compute Recall@K and any additional reported metrics.
-- Write machine-readable metrics and paper-ready table rows.
-
 ## Model Checkpoints
 
 All model checkpoints can be found in our Hugging Face collection:
