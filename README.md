@@ -39,7 +39,7 @@ pip install transformers==4.56.2 torchmetrics==1.8.2 numpy==1.26.4 tqdm pandas==
 For VPR training and evaluation, we forked [serizba/salad](https://github.com/serizba/salad), keeping the original codebase intact while adding support for the OpenHotels dataset and introducing our multi-vector SALAD aggregation approach. Clone the fork and switch to the `OpenHotels` branch:
 
 ```bash
-git clone -b OpenHotels https://github.com/alperctnkaya/salad.git
+git clone -b OpenHotels https://github.com/GWUvision/salad.git
 ```
 
 ## Downloading the Dataset
