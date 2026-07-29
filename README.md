@@ -167,3 +167,21 @@ Checkpoints are saved under `logs/` after each epoch.
 | **Multi-Vector SALAD** | 8320 ((64+1)*128) | **34.11** | **45.24** | **49.58** | **64.32** | **15.64** | **20.83** | **23.19** | **31.64** |
 
 *Performance using DINOv2-ViTB14 as a backbone across various state-of-the-art visual place recognition pooling and aggregation strategies.*
+
+## Usage
+OpenHotels and its associated models are provided to support research and educational work on visual recognition, retrieval, representation learning, and related areas. Because visual datasets and models can be used in contexts beyond those anticipated by their creators, access to OpenHotels and its associated models is gated to support thoughtful, responsible use and to make these usage expectations visible to prospective users.
+
+These resources should not be used:
+- to identify, locate, track, profile, or target specific individuals;
+- in ways that facilitate surveillance, harassment, discrimination, exploitation, or other harm;
+- to infer sensitive personal information about individuals;
+- in law-enforcement, immigration-enforcement, military, intelligence, or commercial-surveillance applications without first consulting the maintainers;
+- to reconstruct, re-identify, or expose information that has been removed, obscured, or anonymized;
+- to redistribute the dataset, model weights, or access credentials to individuals who have not separately received access; or
+- to create or release derivative resources that materially increase the risk of misuse without appropriate ethical and safety review.
+
+Proposed uses in law-enforcement, immigration-enforcement, military, intelligence, or commercial-surveillance contexts warrant particular scrutiny and should undergo appropriate independent ethical, legal, and institutional review before proceeding.
+
+Users are responsible for determining whether their proposed work requires review by an institutional review board, ethics committee, data-protection office, or other relevant authority. Access to these resources should not be understood as ethical, legal, institutional, or regulatory approval for a particular project.
+
+We encourage users to describe the limitations and foreseeable risks of these resources in resulting publications and other outputs, consider the people and communities who could be affected by their use, and avoid claims or demonstrations that encourage harmful or inappropriate deployment.
